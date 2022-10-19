@@ -3,17 +3,15 @@
 using namespace std;
 
 int main(){
-
-	set <string> lista_de_compras;
-	string compras, split; //split de cortar :)
 	int n;
-	
 	cin >> n;
 	
 	while(n--){
-		fflush(stdin);
-		//cin.ignore();
+		string compras, split; //split de cortar :)
+		set <string> lista_de_compras;
+		cin.ignore();
 		getline(cin, compras);
+		
 		for(int i = 0; i < compras.size(); i++){
 			if(compras[i] != ' '){
 				split += compras[i] ; //se for diferente de space, pode contatenar
@@ -25,10 +23,7 @@ int main(){
 		for(auto it = lista_de_compras.begin(); it != lista_de_compras.end(); it++){
             cout << *it << " ";
         }
-        cout << endl;
-        lista_de_compras.clear();
-        compras.clear();
-        split.clear();
+        //cout << endl;
 	}
 	return 0;
 }
