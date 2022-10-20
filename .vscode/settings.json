@@ -2,6 +2,7 @@
     "DockerRun.DisableDockerrc": true,
     "code-runner.defaultLanguage": "",
     "files.associations": {
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "ostream": "cpp"
     }
 }
